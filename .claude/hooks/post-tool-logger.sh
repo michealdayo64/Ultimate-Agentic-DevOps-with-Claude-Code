@@ -1,7 +1,8 @@
-#!/bin/bash
+#! /usr/bin/bash
 # PostToolUse hook — logs Terraform validation and formatting commands
 
 INPUT=$(cat)
+echo $INPUT
 CMD=$(echo "$INPUT" | jq -r '.tool_input.command // empty')
 
 if echo "$CMD" | grep -qE "terraform fmt|terraform validate"; then
