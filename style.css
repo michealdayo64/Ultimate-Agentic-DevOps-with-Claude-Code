@@ -177,24 +177,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* Background Image */
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit:fill;
-  padding-top: 80px; /* space for fixed navbar */
-}
-
-/* Overlay */
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.25);
-  padding-top: 20px;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
 }
 
 /* Content */
